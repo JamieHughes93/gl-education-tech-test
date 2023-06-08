@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+
+<div id="calculator-container">
+    <div class="header">
+        <h2>Calculator</h2>
+    </div>
+    <div class="content">
+        <button id="begin-calculation">Begin Calculation</button>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-header">
+        <h3>Calculation Form</h3>
+        <button id="close-modal">Close</button>
+    </div>
+    <div class="modal-content">
+        <label for="start">Start:</label>
+        <input type="number" id="start" name="start">
+        <br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount">
+        <br>
+        <div class="button-container">
+            <button id="calculate-add">Add</button>
+            <button id="calculate-subtract">Subtract</button>
+        </div>
+        <p class="modal-result-heading">Result: <span id="modal-result"></span></p>
+    </div>
+    <div class="modal-footer">
+        GL Education Tech Test - Jamie Hughes
+    </div>
+</div>
